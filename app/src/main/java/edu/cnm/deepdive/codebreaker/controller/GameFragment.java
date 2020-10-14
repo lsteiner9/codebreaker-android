@@ -139,7 +139,7 @@ public class GameFragment extends Fragment implements InputFilter {
         binding.guessControls.setVisibility(solved ? View.INVISIBLE : View.VISIBLE));
   }
 
-  private void updateGameDisplay(Game game) {
+  private void updateGameDisplay(Game game) { 
     adapter.clear();
     adapter.addAll(game.getGuesses());
     binding.guessList.setAdapter(adapter);
